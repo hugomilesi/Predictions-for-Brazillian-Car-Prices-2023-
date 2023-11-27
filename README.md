@@ -6,7 +6,7 @@ This project demonstrates the creation of a machine learning model for predictin
 - Python.
 - Packages: Pandas, numpy, plotly, seaborn, sklearn, pickle,scipy , 
 
-## File1: brazil-car-price-insights-predictions.ipynb
+## File1: brazil-car-price-EDA.ipynb
 - **Data Preprocessing:** Initial preprocessing steps include removing the first column, changing data types of some columns, and checking the summary statistics of numerical columns.
 Hypothesis Testing:
 
@@ -25,9 +25,27 @@ Hypothesis Testing:
   - Cars equipped with alcohol-based fuel systems are typically more affordable.
   - The year model exhibits a positive correlation with the car's price.
 
-  File: model_build.ipynb
+## File2: model_build.ipynb
 
-## Data Preprocessing:
-- Categorical features with high cardinality (e.g., 'model', 'brand', 'year_model', 'month_of_reference') are target-encoded, while categorical features with low cardinality are ordinal-encoded.
-- The data is split into features (X) and the target variable (y).
-- A preprocessing pipeline is created using scikit-learn's ColumnTransformer to handle numerical and categorical features.
+- **Data Preprocessing:**
+  - Categorical features with high cardinality (e.g., 'model', 'brand', 'year_model', 'month_of_reference') are target-encoded, while categorical features with low cardinality are ordinal-encoded.
+  - The data is split into features (X) and the target variable (y).
+  - A preprocessing pipeline is created using scikit-learn's ColumnTransformer to handle numerical and categorical features.
+
+- **Model Training:**
+  - Training four different regression models: Linear Regression, Gradient Boosting Regressor, Random Forest Regressor, and Decision Tree Regressor.
+  - The models are trained on the preprocessed training data, and their performance is evaluated on the test set.
+
+- **Model Evaluation:**
+  - Metrics such as Mean Squared Error (MSE), R-squared (R2) Score, Explained Variance Score, and Mean Absolute Error (MAE) are calculated for each model.
+  - The results are displayed in a table, and the Random Forest Regressor is identified as the best-performing with a R-Squared Score of **99.5**.
+
+- **Model Testing on New Data:**
+![image](https://github.com/hugomilesi/Predictions-for-Brazillian-Car-Prices-2023-/assets/71730507/dd31afa2-403c-429a-9f61-6dc49b7ec266)
+  - The best-performing model (Random Forest Regressor) is loaded using the saved pipeline.
+  - The model is tested on the validation dataset for the year 2023, and the predicted prices are compared to the actual prices.
+  - The R-squared score for the model on the validation data is also displayed.
+
+- **Interactive Prediction Widget:**
+  - The notebook includes an interactive widget for predicting car prices based on user input.
+  - Users can select values for features such as year of reference, month of reference, car brand, model, fuel type, gear type, engine size, and year model. Clicking the "Predict" button provides the predicted car price.
