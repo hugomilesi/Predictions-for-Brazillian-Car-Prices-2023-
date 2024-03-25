@@ -47,5 +47,6 @@ Hypothesis Testing:
   - The R-squared score for the model on the validation data is also displayed.
 
 - **Interactive Prediction Widget:**
+- ![image](https://github.com/hugomilesi/Predictions-for-Brazillian-Car-Prices-2023-/assets/71730507/85caebb0-cfc4-4e32-a3f3-edadae7696d1)
   - The notebook includes an interactive widget for predicting car prices based on user input.
   - Users can select values for features such as year of reference, month of reference, car brand, model, fuel type, gear type, engine size, and year model. Clicking the "Predict" button provides the predicted car price.
