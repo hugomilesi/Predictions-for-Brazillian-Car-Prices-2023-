@@ -8,7 +8,6 @@ This project demonstrates the creation of a machine learning model for predictin
 
 ## File1: brazil-car-price-EDA.ipynb
 - **Data Preprocessing:** Initial preprocessing steps include removing the first column, changing data types of some columns, and checking the summary statistics of numerical columns.
-Hypothesis Testing:
 
 - **Exploratory Data Analysis (EDA):**
   ![image](https://github.com/hugomilesi/Predictions-for-Brazillian-Car-Prices-2023-/assets/71730507/6cd0e93a-c16e-4abd-b683-29702750f948)
