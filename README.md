@@ -10,8 +10,6 @@ This project demonstrates the creation of a machine learning model for predictin
 - **Data Preprocessing:** Initial preprocessing steps include removing the first column, changing data types of some columns, and checking the summary statistics of numerical columns.
 Hypothesis Testing:
 
-- **Hypothesis testing:**  Performed using ANOVA (Analysis of Variance) on categorical variables to check if there are significant differences in average prices among different categories within each feature. All p-values indicate rejection of the null hypothesis, suggesting that there are significant differences.
-
 - **Exploratory Data Analysis (EDA):**
   ![image](https://github.com/hugomilesi/Predictions-for-Brazillian-Car-Prices-2023-/assets/71730507/6cd0e93a-c16e-4abd-b683-29702750f948)
   - Distribution of numerical features (engine_size, age_years, year_model) is visualized using histograms.
